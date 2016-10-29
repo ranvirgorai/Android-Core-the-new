@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.wslab.thenewbustonrevised">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="in.wslab.thenewbustonrevised.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="in.wslab.thenewbustonrevised.Menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Camera">
+            <intent-filter>
+                <action android:name="in.wslab.thenewbustonrevised.Menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="in.wslab.thenewbustonrevised.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Prefs"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="in.wslab.thenewbustonrevised.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GFX"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".GFXSurface"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".internalData"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ExternalData"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".SQLliteExample"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".SQLView"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="in.wslab.thenewbustonrevised.SQLVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Accelerate"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".AlertDialogs"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".HttpExample"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".GLExample"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Voice"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".TextVoice"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".StatusBarNotifiaction"
+            android:label="@string/app_name" />
+
+
+
+
+    </application>
+
+</manifest>
